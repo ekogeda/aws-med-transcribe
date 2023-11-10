@@ -1,12 +1,11 @@
-import React, { useState, useRef } from 'react';
-import uuid from 'uuid';
+import React, { useState } from 'react';
 import SummaryCard from './SummaryCard';
 import { streamAudioToWebSocket, closeSocket } from './websocketUtils';
 import { detectEntity } from '../comprehend/DetectEntities';
 import Transcript, { tokenizeTranscript } from './Transcript';
 import { getMicAudioStream } from './audio';
 import EntityTable from './EntityTable';
-import TranscriptCard from './TranscriptCard';
+// import TranscriptCard from './TranscriptCard';
 // import AudioWaveform from './WaveSurfer';
 import * as _ from 'lodash';
 import audio from '../medasrdemo-Paul.mp4';

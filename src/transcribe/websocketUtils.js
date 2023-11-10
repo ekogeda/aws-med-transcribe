@@ -205,7 +205,8 @@ function createPresignedUrl() {
         endpoint,
         '/medical-stream-transcription-websocket',
         'transcribe',
-        crypto.createHash('sha256').update('', 'utf8').digest('hex'), {
+        crypto.createHash('sha256').update('', 'utf8').digest('hex'), 
+        {
         'key': credential.accessKeyId,
         'secret': credential.secretAccessKey,
         // 'sessionToken': $('#session_token').val(),
